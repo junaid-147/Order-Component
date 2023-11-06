@@ -1,0 +1,148 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{ 
+font-family: 'Red Hat Display', sans-serif;
+background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg)no-repeat;
+display: flex;
+justify-content: center;
+margin:30px 0;
+background-size: contain;
+
+}
+
+.card{
+    background-color: #ffff;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 5);
+    margin: 35px 0;
+    max-width: 450px;
+    text-align: center;
+    padding-bottom: 40px;
+    
+
+}
+
+.card-hero img{
+    border-radius: 12px 12px 0 0;
+    margin: 0 0 24px;
+ 
+    
+}
+
+.card-title{
+    color: hsl(225, 18%, 27%);
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0 0 24px;
+}
+
+.card-text{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 0 24px;
+     padding: 0 48px;
+}
+
+
+
+button {
+    background-color: transparent;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    text-align: center;
+}
+
+.card-plan{
+    align-items: center;
+    border-radius: 12px;
+    background-color: hsl(225, 100%, 98%) ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0 40px 30px 40px;
+    
+    
+    
+}
+
+.card-plan a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;   
+    
+}
+
+.card-plan a:hover{
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.card-plan-description{
+   font-size: 14px;
+   margin-right:80px ;
+   padding: 10px 0;
+}
+
+.card-plan-description h3 {
+    
+    color: hsl(223, 47%, 23%);
+    
+}
+
+.card-plan-description p {
+    
+    margin-top: -10px;
+    color: hsl(224, 23%, 55%); ;
+    
+}
+
+.card-plan img{
+    margin-left:10px;
+}
+
+.card-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.card-action .payment{
+background-color: hsl(245, 75%, 52%) ;
+color: #ffff;
+border-radius: 12px;
+margin: 0 40px 20px 40px;
+padding: 14px 0;
+box-shadow: 0 14px 8px 8px rgba(118, 108, 241,.20);
+
+}
+.card-action .payment:hover{
+    background-color: #766CF1;
+}
+
+.card-action .cancel{
+    margin-top: 8px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+    font-family:' serif';
+
+
+}
+.card-action .cancel:hover{
+    color: hsl(223, 47%, 23%);
+    
+}
+
+@media (max-width: 640px) {
+    body {
+        background-image: url('../project1/images/pattern-background-mobile.svg');
+    }
+}
